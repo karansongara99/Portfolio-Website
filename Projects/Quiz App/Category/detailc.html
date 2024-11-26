@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: rgb(136, 155, 65);
+      }
+      .head {
+        background-color: rgb(67, 67, 56);
+        margin: 5px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        padding: 20px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .head,
+      h2 {
+        font-size: 25px;
+      }
+
+      .quiz-container {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(225, 31, 13, 0.93);
+        width: 600px;
+        border: 3px solid black;
+        padding: 30px;
+        padding-right: 80px;
+        margin: 40px;
+        margin-left: 50vh;
+      }
+
+      .quiz-header {
+        padding: 20px;
+        margin: 5px;
+      }
+
+      #question {
+        text-align: left;
+        font-size: 30px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        font-size: 20px;
+        margin: 10px;
+        font-weight: 500;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      ul li label {
+        cursor: pointer;
+      }
+
+      button {
+        background-color: #58cd2d;
+        color: black;
+        border: none;
+        display: block;
+        width: 100%;
+        margin: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 10px;
+      }
+
+      button:hover {
+        background-color: #732d91;
+        transform: scale(1.1);
+      }
+
+      .card {
+        width: 400px;
+        height: 254px;
+        margin: 0 auto;
+        background-color: #011522;
+        border-radius: 8px;
+        z-index: 1;
+      }
+
+      .tools {
+        display: flex;
+        align-items: center;
+        padding: 9px;
+      }
+
+      .circle {
+        padding: 0 4px;
+      }
+
+      .box {
+        display: inline-block;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        padding: 1px;
+        border-radius: 50%;
+      }
+
+      .red {
+        background-color: #ff605c;
+      }
+
+      .yellow {
+        background-color: #ffbd44;
+      }
+
+      .green {
+        background-color: #00ca4e;
+      }
+
+      code {
+        color: beige;
+        padding: 10px;
+        margin: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+        font-size: 15px;
+      }
+
+      h3{
+        color: aliceblue;
+        font-size: 25px;
+        padding: 10px;
+        font-weight: 600;
+        margin: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      .outer {
+        position: relative;
+        display: flex;
+        flex: 3;
+        padding: 20px;
+      }
+
+
+      #cardbtn {
+        padding: 8px;
+        font-size: 20px;
+        border-radius: 40px;
+        border: #ff605c;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        margin: 5px;
+        margin-left: 250px;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="head">
+      <h2>LEARN C</h2>
+      <p>
+        This C cheatsheet is aimed to provide you with a quick syntax revision of C language. This will be helpful for students who need a quick syntax revision right before their exams or professionals to quickly look at the C language syntax. Let's start with the basics and move toward the more intricate aspects of C programming.
+      </p>
+    </div>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question is loading...</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer...</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer...</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer...</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer...</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit" onclick="validate()">Submit</button>
+    </div>
+
+    <!--------------------------------1st Row----------------->
+
+    <div class="outer">
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p>
+            <h3>printf Function</h3>
+           
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p>
+            <h3>scanf Function</h3>
+           
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p>
+            <h3>Comments</h3>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------2nd Row----------------->
+
+    <div class="outer">
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p>
+            <h3>Character type</h3>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p><h3>Integer Type</h3></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p><h3>Float Type</h3></p>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------3rd Row----------------->
+
+    <div class="outer">
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p>
+            <h3>Double type</h3>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p><h3>Void Type</h3></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+          <p id="para"><h3>If Statement</h3></p>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      const quizData = [
+        {
+          question: "1. Who is the father of C language?",
+          a: "Steve Jobs",
+          b: "James Gosling",
+          c: "Dennis Ritchie",
+          d: "Rasmus Lerdorf",
+          correct: "c",
+        },
+        {
+          question: "6. Which of the following cannot be a variable name in C?",
+          a: "volatile",
+          b: "true",
+          c: "friend",
+          d: "export",
+          correct: "a",
+        },
+        {
+          question: "What does HTML stand for?",
+          a: "Hypertext Markup Language",
+          b: "Hypertext Markdown Language",
+          c: "Hyperloop Machine Language",
+          d: "Helicopters Terminals Motorboats Lamborginis",
+          correct: "a",
+        },
+        {
+          question: "What year was JavaScript launched?",
+          a: "1996",
+          b: "1995",
+          c: "1994",
+          d: "none of the above",
+          correct: "b",
+        },
+      ];
+
+      const quiz = document.getElementById("quiz");
+      const answerElements = document.querySelectorAll(".answer");
+      const questionElement = document.getElementById("question");
+      const a_text = document.getElementById("a_text");
+      const b_text = document.getElementById("b_text");
+      const c_text = document.getElementById("c_text");
+      const d_text = document.getElementById("d_text");
+      const submitButton = document.getElementById("submit");
+
+      let currentQuiz = 0;
+      let score = 0;
+
+      const deselectAnswers = () => {
+        answerElements.forEach((answer) => (answer.checked = false));
+      };
+
+      const getSelected = () => {
+        let answer;
+        answerElements.forEach((answerElement) => {
+          if (answerElement.checked) answer = answerElement.id;
+        });
+        return answer;
+      };
+
+      const loadQuiz = () => {
+        deselectAnswers();
+        const currentQuizData = quizData[currentQuiz];
+        questionElement.innerText = currentQuizData.question;
+        a_text.innerText = currentQuizData.a;
+        b_text.innerText = currentQuizData.b;
+        c_text.innerText = currentQuizData.c;
+        d_text.innerText = currentQuizData.d;
+      };
+
+      loadQuiz();
+
+      submitButton.addEventListener("click", () => {
+        const answer = getSelected();
+        if (answer) {
+          if (answer === quizData[currentQuiz].correct) score++;
+          currentQuiz++;
+          if (currentQuiz < quizData.length) loadQuiz();
+          else {
+            quiz.innerHTML = `
+            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+            <button onclick="history.go(0)">Play Again</button>
+        `;
+          }
+        }
+      });
+
+      function validate() {
+        var vali = document.getElementById("#btn");
+        if (vali == "") {
+          alert("You clicked the submit button");
+        }
+      }
+    </script>
+  </body>
+</html>
