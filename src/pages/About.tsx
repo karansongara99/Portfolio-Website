@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 import img from '../Ellipse 2.jpg';
+import resume from '../../src/pages/Karan_Songara_Resume.pdf'; 
 
 const About = () => {
   return (
@@ -56,7 +57,7 @@ const About = () => {
             </div>
 
             <motion.a
-              href="/resume.pdf"
+              href={resume}
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

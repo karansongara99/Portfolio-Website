@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Users, Globe, Code } from 'lucide-react';
+import { Briefcase, Users, Globe } from 'lucide-react';
 
 const Experience = () => {
   const responsibilities = [
     { icon: <Globe size={24} />, text: 'Live Hosting & Deployment', color: 'from-blue-500 to-blue-600' },
     { icon: <Users size={24} />, text: 'Client Communication & Management', color: 'from-green-500 to-green-600' },
-    { icon: <Code size={24} />, text: 'Full Stack Development', color: 'from-purple-500 to-purple-600' },
+
   ];
 
   return (
