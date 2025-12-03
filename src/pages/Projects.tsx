@@ -31,7 +31,7 @@ const Projects = () => {
     {
       title: 'News Website',
       description: 'Designed and developed a responsive news website platform enabling news access and live News.Org API Integrated for real-time updates. Tech Stack: React, Node.js, Express.js, News.Org API',
-      image: '',
+      image: 'https://images.news18.com/ibnlive/uploads/2025/08/World-News-AI-Blog-2025-07-71d087050940689d8621058405992e8c.jpg',
       liveUrl: 'https://captilnews.netlify.app/',
       codeUrl: 'https://github.com/karansongara99/News-Website',
       tags: ['Node.js', 'MongoDB','Express.js','React','News.Org API'],
