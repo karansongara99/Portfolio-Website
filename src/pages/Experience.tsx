@@ -90,20 +90,20 @@ const Experience = () => {
         >
           <div className="bg-white rounded-2xl p-6 shadow-xl text-center">
             <p className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-2">
-              7+
+              3+
             </p>
             <p className="text-gray-600 font-medium">Client Projects</p>
           </div>
           
           <div className="bg-white rounded-2xl p-6 shadow-xl text-center">
             <p className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-2">
-              10+
+              6+
             </p>
             <p className="text-gray-600 font-medium">Live Projects</p>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-xl text-center">
             <p className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-2">
-              15+
+              8+
             </p>
             <p className="text-gray-600 font-medium">Projects Completed</p>
           </div>

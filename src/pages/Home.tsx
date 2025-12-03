@@ -75,15 +75,15 @@ const Home = () => {
           className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
         >
           <div className="text-center">
-            <p className="text-4xl font-bold text-blue-600">7+</p>
+            <p className="text-4xl font-bold text-blue-600">3+</p>
             <p className="text-gray-600 mt-2">Client Projects</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-blue-600">10+</p>
+            <p className="text-4xl font-bold text-blue-600">6+</p>
             <p className="text-gray-600 mt-2">Live Projects</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-blue-600">15+</p>
+            <p className="text-4xl font-bold text-blue-600">8+</p>
             <p className="text-gray-600 mt-2">Completed</p>
           </div>
         </motion.div>
